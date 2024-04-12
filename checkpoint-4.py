@@ -13,7 +13,8 @@ print ("Float", my_float)
 my_integer = 42
 print ("Integer", my_integer)
 
-my_decimal = 3.141592
+import deciaml 
+my_decimal = decimal.Decimal('3.141592')
 print ("Decimal", my_decimal)
 
 my_dictionary = {
@@ -26,13 +27,14 @@ print ("Dictionary", my_dictionary)
 
 #Exercise 2: Round your float up.
 
-rounded_float = round(my_float)
+import math
+rounded_float = math.ceil(my_float)
 
 print ("Exercise 2:", rounded_float)
 
 #Exercise 3: Get the square root of your float.
 
-square_float = my_float ** 0.5
+square_float = math.sqrt(my_float)
 
 print ("Exercise 3:", square_float)
 
@@ -50,9 +52,7 @@ print ("Exercise 5:", second_element)
 
 #Exercise 6: Add an element to the end of your list.
 
-new_element = 6
-position = len(my_list)
-my_list.insert(position, new_element)
+my_list.append(6)
 
 print ("Exercise 6:", my_list)
 
